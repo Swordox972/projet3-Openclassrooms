@@ -2,19 +2,23 @@
 
 #Pour lancer les tests: 
 
-#-ouvrez votre terminal 
+# -----Attention-----
+# Ne jamais taper les "" et/ou les ()
 
-#- Utiliser la commande (cd "nom du dossier", toujours sans les guillmeets) et en utilisant 
+#ouvrez votre terminal 
 
-la commande "ls" pour voir ce que contient le dossier dans lequel vous êtes.
+# Utiliser la commande (cd "nom du dossier") et en utilisant la commande "ls" pour afficher ce que 
+contient le dossier dans lequel vous êtes.
 
-#Faites ceci jusqu'à atteindre le projet Projet3-Openclassrooms en effectuant la commande ls
+#Faites ceci jusqu'à voir le projet "Parcours_Projet3" en effectuant la commande ls
 
-#si vous le voyez,  tapez cd "Projet3-Openclassrooms" (Bien sûr sans les "")
+#puis tapez cd "Parcours_Projet3" pour entrer dedans
 
-#-une fois dedans, tapez "cd Android" et ensuite "cd Entrevoisins" (sans les "")
+ #une fois dedans, tapez "cd Projet3-Entrevoisins" 
 
-#-tapez  "./gradlew test" pour les tests unitaires 
+#-une fois dedans, tapez "cd Android" et ensuite "cd Entrevoisins" 
 
-#-tapez "./gradlew androidTest" pour les tests d'interface
+#tapez "./gradlew test" pour les tests unitaires 
+
+#tapez "./gradlew androidTest" pour les tests d'interface
 
