@@ -14,6 +14,7 @@ public class OpenNeighbourEvent {
 
     /**
      * Constructor.
+     *
      * @param neighbour
      */
     public OpenNeighbourEvent(Neighbour neighbour) {

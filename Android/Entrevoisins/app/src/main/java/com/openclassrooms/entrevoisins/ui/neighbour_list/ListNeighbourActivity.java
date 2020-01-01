@@ -11,7 +11,6 @@ import com.openclassrooms.entrevoisins.R;
 import com.openclassrooms.entrevoisins.events.OpenNeighbourEvent;
 import com.openclassrooms.entrevoisins.model.Neighbour;
 
-
 import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;
 
@@ -43,6 +42,7 @@ public class ListNeighbourActivity extends AppCompatActivity {
         mTabLayout.addOnTabSelectedListener(new TabLayout.ViewPagerOnTabSelectedListener(mViewPager));
 
     }
+
     @Override
     protected void onStart() {
         EventBus.getDefault().register(this);

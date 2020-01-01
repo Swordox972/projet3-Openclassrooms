@@ -10,10 +10,11 @@ public class AtPosition {
     public static Matcher<View> atPosition(final int position, final Matcher<View> matcher) {
         return new BaseMatcher<View>() {
             int counter = 0;
+
             @Override
             public boolean matches(final Object item) {
                 if (matcher.matches(item)) {
-                    if(counter == position) {
+                    if (counter == position) {
                         counter++;
                         return true;
                     }
@@ -24,7 +25,7 @@ public class AtPosition {
 
             @Override
             public void describeTo(final Description description) {
-                description.appendText("Element at hierarchy position "+position);
+                description.appendText("Element at hierarchy position " + position);
             }
         };
     }

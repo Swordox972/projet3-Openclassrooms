@@ -1,9 +1,8 @@
 package com.openclassrooms.entrevoisins.ui.neighbour_list;
-import com.openclassrooms.entrevoisins.service.NeighbourApiService;
 
+import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
@@ -16,7 +15,7 @@ import com.bumptech.glide.Glide;
 import com.openclassrooms.entrevoisins.R;
 import com.openclassrooms.entrevoisins.di.DI;
 import com.openclassrooms.entrevoisins.model.Neighbour;
-
+import com.openclassrooms.entrevoisins.service.NeighbourApiService;
 
 
 public class DetailNeighbourActivity extends AppCompatActivity {
@@ -104,7 +103,7 @@ public class DetailNeighbourActivity extends AppCompatActivity {
         }
     }
 
-   private void showToastAddFavoriteOnClick() {
+    private void showToastAddFavoriteOnClick() {
         LayoutInflater layoutInflater = getLayoutInflater();
         View layout = layoutInflater.inflate(R.layout.custom_toast, findViewById(R.id.custom_toast_container));
 
@@ -133,6 +132,6 @@ public class DetailNeighbourActivity extends AppCompatActivity {
     @Override
     public void onStop() {
         super.onStop();
-     active=false;
+        active = false;
     }
 }

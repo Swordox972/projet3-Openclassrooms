@@ -41,7 +41,7 @@ public abstract class DummyNeighbourGenerator {
         return new ArrayList<>(DUMMY_NEIGHBOURS);
     }
 
-    public static List<Neighbour> DUMMY_FAVORITE_NEIGHBOURS=new ArrayList<>();
+    public static List<Neighbour> DUMMY_FAVORITE_NEIGHBOURS = new ArrayList<>();
 
     static List<Neighbour> generateFavoriteNeighbours() {
         return new ArrayList<>(DUMMY_FAVORITE_NEIGHBOURS);

@@ -1,9 +1,6 @@
 package com.openclassrooms.entrevoisins.service;
 
-import android.widget.Toast;
-
 import com.openclassrooms.entrevoisins.model.Neighbour;
-import com.openclassrooms.entrevoisins.ui.neighbour_list.DetailNeighbourActivity;
 
 import java.util.List;
 

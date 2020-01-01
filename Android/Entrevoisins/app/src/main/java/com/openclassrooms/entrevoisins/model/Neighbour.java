@@ -1,7 +1,5 @@
 package com.openclassrooms.entrevoisins.model;
 
-import android.os.Parcelable;
-
 import java.io.Serializable;
 import java.util.Objects;
 
@@ -10,13 +8,19 @@ import java.util.Objects;
  */
 public class Neighbour implements Serializable {
 
-    /** Identifier */
+    /**
+     * Identifier
+     */
     private Integer id;
 
-    /** Full name */
+    /**
+     * Full name
+     */
     private String name;
 
-    /** Avatar */
+    /**
+     * Avatar
+     */
     private String avatarUrl;
 
     private String numeroVoisin;
@@ -24,20 +28,19 @@ public class Neighbour implements Serializable {
     private String aProposDeMoi;
 
 
-
     /**
      * Constructor
+     *
      * @param id
      * @param name
      * @param avatarUrl
-     *
      */
-    public Neighbour(Integer id, String name, String avatarUrl, String numeroVoisin,String aProposDeMoi) {
+    public Neighbour(Integer id, String name, String avatarUrl, String numeroVoisin, String aProposDeMoi) {
         this.id = id;
         this.name = name;
         this.avatarUrl = avatarUrl;
-        this.numeroVoisin=numeroVoisin;
-        this.aProposDeMoi=aProposDeMoi;
+        this.numeroVoisin = numeroVoisin;
+        this.aProposDeMoi = aProposDeMoi;
     }
 
     public Integer getId() {
@@ -64,13 +67,21 @@ public class Neighbour implements Serializable {
         this.avatarUrl = avatarUrl;
     }
 
-    public String getNumeroVoisin () { return this.numeroVoisin; }
+    public String getNumeroVoisin() {
+        return this.numeroVoisin;
+    }
 
-    public void setNumeroVoisin(String numeroVoisin) { this.numeroVoisin= numeroVoisin; }
+    public void setNumeroVoisin(String numeroVoisin) {
+        this.numeroVoisin = numeroVoisin;
+    }
 
-    public String getAProposDeMoi() { return this.aProposDeMoi;  }
+    public String getAProposDeMoi() {
+        return this.aProposDeMoi;
+    }
 
-    public void setAProposDeMoi(String aProposDeMoi) { this.aProposDeMoi=aProposDeMoi; }
+    public void setAProposDeMoi(String aProposDeMoi) {
+        this.aProposDeMoi = aProposDeMoi;
+    }
 
 
     @Override
