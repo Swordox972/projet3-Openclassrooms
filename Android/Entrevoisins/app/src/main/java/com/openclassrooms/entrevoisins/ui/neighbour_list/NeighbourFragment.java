@@ -32,9 +32,10 @@ public class NeighbourFragment extends Fragment {
 
     /**
      * Create and return a new instance
-     *
+     *Permet de traiter un boolean et de le sauvegarder dans un bundle pour l'utiliser dans initList
      * @return @{@link NeighbourFragment}
      */
+
     public static NeighbourFragment newInstance(Boolean favorite) {
         NeighbourFragment fragment = new NeighbourFragment();
         Bundle args = new Bundle();

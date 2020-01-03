@@ -86,7 +86,7 @@ public class NeighboursListTest {
         Intents.init();
         // Click on a neighbour in the list
         onView(atPosition(0, withId(R.id.list_neighbours)))
-                .perform(RecyclerViewActions.actionOnItemAtPosition(2, click()));
+                .perform(RecyclerViewActions.actionOnItemAtPosition(3, click()));
 
         intended(hasComponent(DetailNeighbourActivity.class.getName()));
 
@@ -105,7 +105,7 @@ public class NeighboursListTest {
 
 
         // Check if neighbour is on favorite
-        onView(withRecyclerView(R.id.list_neighbours).atPosition(2))
+        onView(withRecyclerView(R.id.list_neighbours).atPosition(3))
                 .check(matches(hasDescendant(withText("Vincent"))));
 
 

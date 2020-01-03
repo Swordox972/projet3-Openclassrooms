@@ -43,12 +43,14 @@ public class ListNeighbourActivity extends AppCompatActivity {
 
     }
 
+    // Permet à l'EventBus de savoir que c'est cette activité qu'il faut gérer
     @Override
     protected void onStart() {
         EventBus.getDefault().register(this);
         super.onStart();
     }
 
+    //Stop EventBus lorsque l'activité est stoppé
     @Override
     protected void onStop() {
         EventBus.getDefault().unregister(this);
